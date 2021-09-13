@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <title>Delani Studio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</script>
     
 </head>
 <body>
@@ -61,56 +64,36 @@
             <br>
 
         </div>
-        <div id="whatWeDo">
-            <br>
-            <h1>WHAT WE DO</h1>
+        <div class="whatWeDo">
+            <h3>WHAT WE DO</h3>
             <div class="row">
-                <div class="col-4">
-
-                    <div id="design icon">
-                        <img src="../assets/services-icons/design_icon.png" alt="design icon">
-                        <p>DESIGN</p>
-                    </div>
-                    <div id="design">
-                        <h1>Design</h1>
-                        <p>Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing.</p>
-                        <p>Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make</p>
-                        <p>sure what gets built is what is needed.</p>
-                    </div>
-                    <br>
+                <div class="col-md-4">
+                    <figure>
+                        <img class="design-initially-showing" src="../assets/services-icons/design_icon.png" alt="DESIGN">
+                        <figcaption>DESIGN</figcaption>
+                        <p class="design-initially-hidden" >Our design practice offers a full range of services including brand strategy, interaction and visual designand user experience testing. <br> Throughout your project, our designers create and implement visual design and workflows,
+                            solicit user feedback and work with you to make sure wat gets built is what is needed.</p>
+                    </figure>
                 </div>
-
-                <div class="col-4">
-
-                    <div id="development icon">
-                        <img src="../assets/services-icons/dev_icon.png" alt="dev icon">
-                        <p>DEVELOPMENT</p>
-                    </div>
-                    <div id="development">
-                        <h1>Development</h1>
-                        <p>All engineers are fluent in the latest enterprise, mobile and web development technologies. They collaborate with your team to write, and</p>
-                        <p>improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
-                    </div>
-
+                <div class="col-md-4">
+                    <figure>
+                        <img class="dev-initially-showing" src="../assets/services-icons/dev_icon.png" alt="DEVELOPMENT">
+                        <figcaption>DEVELOPMENT</figcaption>
+                        <p class="dev-initially-hidden">
+                            All engineers are fluent in the latest enterprise, mobile and web development technologies.
+                            <br> They collaborate with your team to write, and improve code ona daily basis, using proven practices such as test-driven development and pair programming.
+                        </p>
+                    </figure>
                 </div>
-
-                <div class="col-4">
-
-                    <div  id="product icon">
-                         <img src="../assets/services-icons/product_icon.png" alt="product icon">
-                         <p>PRODUCT MANAGEMENT</p>
-                    </div>
-                    <div id="product">
-                        <h1>Product Management</h1>
-                        <p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This</p>
-                        <p>iterative process allows for changes as business requirements evolve.</p>
-                    </div>
-
-
+                <div class="col-md-4">
+                    <figure>
+                        <img class="p-mgt-initially-showing" src="../assets/services-icons/product_icon.png" alt="PRODUCT MANAGEMENT">
+                        <figcaption>PRODUCT MANAGEMENT</figcaption>
+                        <p class="p-mgt-initially-hidden">
+                            Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. <br> The iterative process allows for changes as business rewquirements evolve.
+                        </p>
+                    </figure>
                 </div>
-            </div>
-        </div>
-
         <div id="portfolio">
             <br>
             <br>
@@ -164,7 +147,7 @@
         <div id="Contact-us">
             <br>
             <h1>CONTACT US</h1>
-            <form class="container">
+            <form class="frmgroup">
 
                 <div class="row" id="contact information">
                     <div class="col-6">
@@ -184,36 +167,38 @@
                     <div class="col-12">
                       <div class="form-group">
                       <label for="message"></label>
-                      <textarea type="text" name="MESSAGE" class="required form-control" id="mce-MESSAGE comment" cols="30" rows="10" placeholder="Your message here..."></textarea>
+                      <textarea type="text" name="MESSAGE" class="required form-control" id="textarea" cols="30" rows="10" placeholder="Your message here..."></textarea>
                     </div>
 
                 </div>
 
-                <div class="submit"><input type="submit" value="Submit" name="subscribe" class="button"></div>
+                <div class="submit"> <br> <br> <input type="submit" value="Submit" name="subscribe" class="button"></div>
 
             </form>
         </div>
         </div>
-        <div class="Footer" id="social Icons">
+        <div class="Footer" id="social-Icons">
             <br><br>
             
-            <img src="./assets/social_icons/twitter.png" alt="Twitter icon"><i class="fab fa-lg fa-twitter"></i></a>
+            <img src="../assets/social-icons/twitter.png" alt="Twitter icon"><i class="fab fa-lg fa-twitter"></i></a>
             
-            <img src="./assets/social_icons/dribble.png" alt="Dribble icon"><i class="fab fa-lg fa-dribbble"></i></a>
+            <img src="../assets/social-icons/dribble.png" alt="Dribble icon"><i class="fab fa-lg fa-dribbble"></i></a>
             
-            <img src="./assets/social_icons/facebook.png" alt="Facebook icon"><i class="fab fa-lg fa-facebook-f"></i></a>
+            <img src="../assets/social-icons/facebook.png" alt="Facebook icon"><i class="fab fa-lg fa-facebook-f"></i></a>
             
-            <img src="assets/social_icons/g_plus.png" alt="Google_plus icon"><i class="fab fa-lg fa-google-plus-g"></i></a>
+            <img src="../assets/social-icons/g_plus.png" alt="Google_plus icon"><i class="fab fa-lg fa-google-plus-g"></i></a>
             
-            <img src="assets/social_icons/skype.png" alt="Skype icon"><i class="fab fa-lg fa-skype"></i></a>
+            <img src="../assets/social-icons/skype.png" alt="Skype icon"><i class="fab fa-lg fa-skype"></i></a>
             
-            <img src="assets/social_icons/stumble_upon.png" alt="Stumble-upon icon"><i class="fab fa-lg fa-stumble-upon"></i></a>
+            <img src="../assets/social-icons/stumble_upon.png" alt="Stumble-upon icon"><i class="fab fa-lg fa-stumble-upon"></i></a>
             
-            <img src="assets/social_icons/behance.png" alt="Behance icon"><i class="fab fa-lg fa-behance"></i></a>
+            <img src="../assets/social-icons/behance.png" alt="Behance icon"><i class="fab fa-lg fa-behance"></i></a>
             
-            <img src="assets/social_icons/pinterest.png" alt="Pinterest icon"><i class="fab fa-lg fa-pinterest"></i></a>
+            <img src="../assets/social-icons/pinterest.png" alt="Pinterest icon"><i class="fab fa-lg fa-pinterest"></i></a>
             
-            <img src="assets/social_icons/flickr.png" alt="Flickr icon"><i class="fab fa-lg fa-flickr"></i></a>
+            <img src="../assets/social-icons/flickr.png" alt="Flickr icon"><i class="fab fa-lg fa-flickr"></i></a>
+            <br>
+            <br>
 
             <p>DELANI STUDIO<br>2019</p>
 
@@ -221,6 +206,7 @@
 
     </div>
 
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
