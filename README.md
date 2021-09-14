@@ -8,9 +8,10 @@ By Andrew Owalla Tobias
 * it is simple
 ## Technologies Used
 Html, Javascript and Css are the technologies that have been used to create this website.
+### Live link
+https://andrewowalla.github.io/Delani-studio/
 ## Support and contact details
 @twitter @andrewowalla
 ### License
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
 Copyright (c) {2021} **{Andrew Owalla Tobias}**
-  
