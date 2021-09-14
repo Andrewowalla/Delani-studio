@@ -32,10 +32,60 @@ $(document).ready(function()  {
       $(".p-mgt-initially-showing").slideToggle();
     });
     // Hover effect on portfolio images
-    $(".container img").hover(function() {
-       $(".col-3").addClass("image");
-       $(".img-fluid").show();
+    $("#work1").hover(function() {
+       $("#pla").hide();
+    },
+    function(){
+       $("#pla").show();
     });
+    $("#work2").hover(function() {
+      $("#ont").show();
+   },
+   function(){
+      $("#ont").hide();
+   });
+   $("#work3").hover(function() {
+      $("#pri").show();
+   },
+   function(){
+      $("#pri").hide();
+   });
+   $("#work4").hover(function() {
+      $("#we").show();
+   },
+   function(){
+      $("#we").hide();
+   });
+   $("#work5").hover(function() {
+      $("#ab").show();
+   },
+   function(){
+      $("#ab").hide();
+   });
+   $("#work6").hover(function() {
+      $("#but").show();
+   },
+   function(){
+      $("#but").hide();
+   });
+   $("#work7").hover(function() {
+      $("#bur").show();
+   },
+   function(){
+      $("#bur").hide();
+   });
+   $("#work8").hover(function() {
+      $("#gr").show();
+   },
+   function(){
+      $("#gr").hide();
+   });
+   $("#form").submit( function(e){
+      e.preventDefault();
+      alert("Your message has been received")
+   });
+
+
     $("#button").click(function() {
     event.preventDefault();
     });
