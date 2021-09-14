@@ -82,7 +82,8 @@ $(document).ready(function()  {
    });
    $("#form").submit( function(e){
       e.preventDefault();
-      alert("Your message has been received")
+      var user=$("input#name").val()
+      alert(user+" Your message has been received")
    });
 
 
